@@ -3,7 +3,7 @@ Q4:
 import json
 
 # Load the JSON data from the uploaded file
-file_path =#C:/Users/Sanjana/Downloads/DataEngineeringQ2.json
+file_path ="C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
 
 with open(file_path, 'r') as file:
     data = json.load(file)
@@ -48,7 +48,7 @@ from collections import Counter
 import json
 
 # Load the JSON data from the uploaded file
-file_path =#C:/Users/Sanjana/Downloads/DataEngineeringQ2.json
+file_path ="C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
 
 with open(file_path, 'r') as file:
     data = json.load(file)
@@ -72,13 +72,15 @@ female_percentage = (female_count / total_records) * 100
 female_percentage = round(female_percentage, 2)
 
 print(female_percentage)
+
+
 Q6:
 
 from datetime import datetime
 import json
 
 # Load the JSON data from the uploaded file (use your file path here)
-file_path = #C:/Users/Sanjana/Downloads/DataEngineeringQ2.json
+file_path ="C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
 
 with open(file_path, 'r') as file:
     data = json.load(file)
@@ -116,7 +118,7 @@ Q7:
 import json
 
 # Load the JSON data from the uploaded file (use your file path here)
-file_path = #C:/Users/Sanjana/Downloads/DataEngineeringQ2.json
+file_path ="C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
 
 with open(file_path, 'r') as file:
     data = json.load(file)
@@ -139,7 +141,7 @@ import json
 from collections import Counter
 
 # Load the JSON data
-with open(#C:/Users/Sanjana/Downloads/DataEngineeringQ2.json
+with open("C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
 , 'r') as file:
     data = json.load(file)
 
@@ -162,7 +164,7 @@ Q9:
 import json
 
 # Load the JSON data from the uploaded file (use your file path here)
-file_path = #C:/Users/Sanjana/Downloads/DataEngineeringQ2.json
+file_path = "C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
 
 with open(file_path, 'r') as file:
     data = json.load(file)
@@ -197,119 +199,12 @@ print(f"{active_percentage},{inactive_percentage}")
 
 Q10:
 
-96686896670
-9496368916
-7787204833
-9376756879
-5267384241
-+919826374025
-7587265252
-5586958767
-9987602525
-9234354366
-4863281056
-8687986800
-
-7152684236
-
-9184723620
-
-5847346075
-9064537237
-
-992727892
-6888324121
-8248594521
-+917938475936
-+9124648979746
-+916883788633
-+916636278363
-6525356535
-
-+919093872282
-+916888324121
-96686896670: Invalid
-9496368916: Valid
-7787204833: Valid
-9376756879: Valid
-5267384241: Invalid
-+919826374025: Valid
-7587265252: Valid
-5586958767: Invalid
-9987602525: Valid
-9234354366: Valid
-4863281056: Invalid
-8687986800: Valid
-7152684236: Valid
-9184723620: Invalid
-5847346075: Invalid
-9064537237: Valid
-992727892: Invalid
-6888324121: Valid
-8248594521: Valid
-+917938475936: Valid
-+9124648979746: Invalid
-+916883788633: Valid
-+916636278363: Valid
-6525356535: Valid
-+919093872282: Valid
-+916888324121: Valid
-
-Total valid numbers: 18
-import json
-from collections import Counter
-from datetime import datetime
-
-# Load the JSON data from the uploaded file
-file_path = "C:/Users/Rushil/Downloads/DataEngineeringQ2.json"
-with open(file_path, 'r') as file:
-    data = json.load(file)
-
-
-# Function to check if a phone number is valid
-def is_valid_phone_number(phone_number):
-    # Remove any spaces and ensure the phone number is a string
-    phone_number = str(phone_number).strip()
-    if(len(phone_number)>10):
-    # Check if the phone number starts with +91 or 91
-        if phone_number.startswith("+91"):
-            phone_number = phone_number[3:]  # Remove the +91 prefix
-        elif phone_number.startswith("91"):
-            phone_number = phone_number[2:]  # Remove the 91 prefix
-        else:
-   …
-from collections import Counter
-import json
-
-# Load the JSON data from the uploaded file
-file_path = "C:/Users/Rushil/Downloads/DataEngineeringQ2.json"
-with open(file_path, 'r') as file:
-    data = json.load(file)
-
-# Extract gender data and calculate mode
-genders = [record.get("patientDetails", {}).get("gender", None) for record in data]
-gender_counts = Counter(filter(None, genders))  # Exclude None or missing values
-
-# Find mode (most common gender)
-mode_gender = gender_counts.most_common(1)[0][0]
-
-# Impute missing genders with the mode
-imputed_genders = [gender if gender else mode_gender for gender in genders]
-
-# Calculate the percentage of female gender after imputation
-total_records = len(imputed_genders)
-female_count = imputed_genders.count("F")
-female_percentage = (female_count / total_records) * 100
-
-# Round the percentage to 2 decimal places
-female_percentage = round(female_percentage, 2)
-
-print(female_percentage)
 import json
 from collections import Counter
 from datetime import datetime
 # Load the JSON data from the uploaded file
-file_path = "C:/Users/Rushil/Downloads/DataEngineeringQ2.json"
+file_path = "C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
+
 with open(file_path, 'r') as file:
     data = json.load(file)
 # Function to check if a phone number is valid
@@ -342,15 +237,17 @@ with open(output_path, 'w') as file:
     json.dump(data, file, indent=4)
 
 print(valid_count)
+
 Q11:
 
-#C:/Users/Sanjana/Downloads/DataEngineeringQ2.json
+
 import json
 from datetime import datetime
 import numpy as np
 
 # Load the JSON data
-with open('C:/Users/megha/Downloads/DataEngineeringQ2.json', 'r') as file:
+with open("C:/Users/Sanjana k/Downloads/DataEngineeringQ2.json"
+, 'r') as file:
     data = json.load(file)
 
 # Initialize lists for patient age and number of medicines
